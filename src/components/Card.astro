@@ -1,0 +1,28 @@
+---
+const {title, text, price}= Astro.props
+---
+<div class="card-content">
+    <p>{title}</p>
+    <p>{text}</p>
+    <p>{price}</p>
+</div>
+<style>
+    .card-content{
+        font-family: var(--font-text);
+        color: var(--text-color-content);
+    }
+    .card-content p:first-child{
+        font-weight: 600;
+    }
+    .card-content p:nth-of-type(2){
+        color: var(--text-color-secondary);
+        font-size: .77rem;
+    }
+    .card-content p:last-child{
+        font-weight: 600;
+        font-size: .98rem;
+    }
+    .card-content p:last-child::before{
+        content: "$";
+    }
+</style>

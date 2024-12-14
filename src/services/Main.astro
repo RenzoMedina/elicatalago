@@ -1,0 +1,103 @@
+---
+import Img from "../components/Img.astro"
+import Card from "../components/Card.astro"
+import Nitro from "../assets/img/nitro_col.png"
+---
+<main>
+<div class="container">
+    <div class="row">
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+        <div class="card-Product">
+            <Img src={Nitro} alt="colonia nitro"/>
+            <Card 
+                title="Nitro Colonia"
+                text="100 ml"
+                price="10.000"
+            />
+        </div>
+    </div>
+</div>
+</main>
+<style>
+    main{
+        padding: 1rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+
+    }
+    .card-Product{
+        border-radius: 10px;
+        padding: .5rem;
+        background:  var(--bg-card);
+        box-shadow: 2px 2px 5px var(--bg-card);
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+</style>

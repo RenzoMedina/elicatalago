@@ -1,0 +1,9 @@
+---
+import { Image } from "astro:assets";
+const {src, alt} = Astro.props
+---
+<div class="card-img">
+    <Image src={src} alt={alt} width="90"/>
+</div>
+<style>
+</style>
