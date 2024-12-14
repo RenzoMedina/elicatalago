@@ -1,7 +1,18 @@
 :root{
     --primary: #330B51;
+    --primary-900:#1A0629;
     --text-color-primary:#B8E1DA;
     --text-color-content:#0D0314;
     --text-color-secondary:#808080;
     --bg-card: #EFECF2;
+    --font-text:'Saira'
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Saira';
+    src: url('../fonts/Saira-Regular.ttf');
 }
